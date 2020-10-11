@@ -1,4 +1,4 @@
-#!/home/juanjo/Documents/test/python/django/bin/python
+#!/home/juanjo/Documents/programming/python/trydjango/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
