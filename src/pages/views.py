@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.shortcuts import HttpResponse
 
 
 # Create your views here.
-def home_view(*args, **kwargs):
-    return HttpResponse("Hello World1")
+def home_view(request, *args, **kwargs):
+    # print(args, kwargs)
+    # print(request.user)
+    return render(request, 'home.html', {})
