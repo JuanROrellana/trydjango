@@ -1,6 +1,23 @@
-<h1>
-    Hello World
-</h1>
-<p>
-    This is a template
-</p>
+{% extends 'base.html' %}
+
+{% block content_main %}
+    <h1>
+        Hello World {{ request.user }}
+    </h1>
+    <h4>
+        variable {{ my_text }} and number {{ my_number }}
+    </h4>
+    <h4>
+        List:
+        <ul>
+            {% for item in my_list %}
+                <li>
+                    {{ item }}
+                </li>
+            {% endfor %}
+        </ul>
+    </h4>
+    <p>
+        This is a template
+    </p>
+{% endblock %}
